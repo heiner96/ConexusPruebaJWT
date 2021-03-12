@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Model.Productos>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COD_PRODUCTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PRODUCTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DOSIS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ENTRATAMIENTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MEDICO_PRESCRIPTOR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CODIGO_VEEVA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ESPECIALIDAD_MEDICO_PRESCRIPTOR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FECHA_ALTA_PRODUCTO)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COD_PRODUCTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PRODUCTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOSIS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ENTRATAMIENTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MEDICO_PRESCRIPTOR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODIGO_VEEVA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESPECIALIDAD_MEDICO_PRESCRIPTOR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FECHA_ALTA_PRODUCTO)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,209 @@
+﻿@model IEnumerable<Model.Personas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_PACIENTE_TITULAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_VENDOR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_PERSONAL_PACIENTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NUMERO_CARNET)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PRIMER_APELLIDO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SEGUNDO_APELLIDO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PAIS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GENERO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FECHA_NACIMIENTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TIPO_IDENTIFICACION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FUENTE_INSCRIPCION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TELEFONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TELEFONO2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MOVIL_CELULAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DIRECCIONDETALLADA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARENTESCO_CON_TITULAR_CUENTA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROVINCIA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TIPO_PACIENTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FECHA_CREACION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FECHA_INSCRIPCION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FECHA_ULTIMA_MODIFICACION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COMO_SE_ENTERO_PROGRAMA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACEPTA_SER_CONTACTADO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACEPTA_CONTACTO_TELEFONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACEPTA_CONTACTO_CELULAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACEPTA_CONTACTO_CORREO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ESTADO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.authorizedAccount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID_PACIENTE_TITULAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID_VENDOR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID_PERSONAL_PACIENTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NUMERO_CARNET)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOMBRE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PRIMER_APELLIDO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SEGUNDO_APELLIDO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PAIS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GENERO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FECHA_NACIMIENTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIPO_IDENTIFICACION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FUENTE_INSCRIPCION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TELEFONO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TELEFONO2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MOVIL_CELULAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DIRECCIONDETALLADA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARENTESCO_CON_TITULAR_CUENTA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROVINCIA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIPO_PACIENTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FECHA_CREACION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FECHA_INSCRIPCION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FECHA_ULTIMA_MODIFICACION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COMO_SE_ENTERO_PROGRAMA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACEPTA_SER_CONTACTADO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACEPTA_CONTACTO_TELEFONO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACEPTA_CONTACTO_CELULAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACEPTA_CONTACTO_CORREO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESTADO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.authorizedAccount)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

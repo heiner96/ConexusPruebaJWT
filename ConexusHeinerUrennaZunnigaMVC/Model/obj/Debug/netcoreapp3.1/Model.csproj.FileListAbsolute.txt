@@ -1,0 +1,9 @@
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\50688\source\repos\ConexusHeinerUrennaZunnigaMVC\Model\obj\Debug\netcoreapp3.1\Model.pdb

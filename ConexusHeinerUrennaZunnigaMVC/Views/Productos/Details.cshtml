@@ -1,0 +1,73 @@
+﻿@model Model.Productos
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Productos</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.COD_PRODUCTO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.COD_PRODUCTO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PRODUCTO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PRODUCTO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DOSIS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DOSIS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ENTRATAMIENTO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ENTRATAMIENTO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MEDICO_PRESCRIPTOR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MEDICO_PRESCRIPTOR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODIGO_VEEVA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODIGO_VEEVA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ESPECIALIDAD_MEDICO_PRESCRIPTOR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ESPECIALIDAD_MEDICO_PRESCRIPTOR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FECHA_ALTA_PRODUCTO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FECHA_ALTA_PRODUCTO)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
